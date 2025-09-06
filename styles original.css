@@ -1,0 +1,315 @@
+body {
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 29%, rgba(237, 237, 237, 1) 100%);
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000b7;
+
+    line-height: 1.6;
+    padding:0;
+    margin: 0;
+}
+
+/*
+        HEADER
+*/
+header {
+    padding: 0px 0px 25px 0px;
+    margin: auto;
+
+    width: 96vw;
+    height: 25px;
+
+    border-bottom: 2px solid rgb(14, 14, 14);
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    font-size: 2rem;
+    font-weight: normal;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.3rem;
+    display: flex;
+    list-style:upper-roman;
+    gap: 4rem;
+}
+nav ul li {
+    cursor: pointer;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: color 0.5s, text-decoration-color 0.5s ease;
+}
+nav ul li a:link {
+    cursor: pointer;
+    color:#000000b7;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: color 0.5s, text-decoration-color 0.5s ease;
+}
+nav ul li a:visited {
+    cursor: pointer;
+    color:#000000b7;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: color 0.5s, text-decoration-color 0.5s ease;
+}
+nav ul li a:hover {
+    color:#000000b7;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0.541);
+}
+
+
+/*
+        ABOUT
+*/
+
+
+.about {
+    display: flex;
+    gap: 0px;
+    padding: 13px;
+    margin: auto;
+}
+.about .img-content {
+    margin: 0px;
+    flex-shrink: 0;
+}
+.about .img-content img{
+    height: 700px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+.about .text-content {
+    position: relative;
+    top: 0px;
+    flex: 1;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about .text-content h4 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-decoration: underline;
+    font-variant:small-caps ;
+    margin: 10px auto 0px auto;
+}
+.about .text-content p{
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25pt;
+    background: #000000;
+    background: linear-gradient(144deg,rgba(0, 0, 0, 0.79) 0%, rgba(79, 79, 79, 0.79) 78%, rgba(36, 36, 36, 0.86) 100%);
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px auto 0px auto;
+}
+
+
+/*
+    PROJECTS
+*/
+
+
+.projects-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 10px auto 30px auto;
+    width: 70vw;
+    border-bottom: 2px solid rgba(14, 14, 14, 0.212);
+    border-radius: 4px;
+}
+.projects {
+    display: flex;
+    gap: 50px;
+    padding: 13px;
+    margin: auto;
+    
+}
+.projects .dec-img {
+    height: 950px;
+    width: 45vw;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 auto 0 20px;
+}
+.projects .list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 50vw;
+}
+.projects .list .item {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+    margin: 10px auto 0 auto;
+    background:rgba(255, 255, 255, 0.7);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition:  transform .3s, box-shadow .3s ease;
+}
+.projects .list .item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.281);
+}
+.projects .list .item figure {
+    margin: 0px;
+    padding: 0px;
+}
+.projects .list .item figcaption {
+    text-align: center;
+    font-size: .8rem;
+    font-style: italic;
+}
+.projects .list .item img {
+    height: 200px;
+    width: 200px;
+    object-fit:cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 10px 10px 0px 10px;
+}
+.projects .list .item .info {
+    margin: 0px 25px 0px 0px;
+    padding: 0px;
+    position: relative;
+    top: -15px;
+}
+.projects .list .item .info a:link {
+    color:#000000be;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+}
+.projects .list .item .info a:visited {
+    color: #000000be;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+}
+.projects .list .item .info a:hover {
+    color:#1b268bb2;
+    text-decoration: underline 0.15em #1b268bb2;
+    transition: text-decoration-color .5s, color .5s ease;
+}
+.projects .list .item .info audio {
+    width: 32vw;
+    padding: auto;
+    border-radius: 15px;
+}
+
+
+/* 
+        DEMOS
+*/
+
+.demos-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 40px auto 10px auto;
+    width: 70vw;
+    border-bottom: 2px solid rgba(14, 14, 14, 0.219);
+    border-radius: 5px;
+} 
+.demos .list {
+    display: flex;
+    margin: 10px 200px 10px 200px;
+    padding: 10px;
+    gap: 40px;
+}
+.demos .list .item {
+    margin: 10px auto 10px auto;
+    width: 25vw;
+    text-align: center;
+    background:rgba(255, 255, 255, 0.7);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition:  transform .3s, box-shadow .3s ease;
+}
+.demos .list .item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.281);
+}
+.demos .list .item h2 {
+    margin: 10px 0 10px 0;
+}
+.demos .list .item p {
+    margin: 0 0 10px 0;
+}
+.demos .list .item audio {
+    border-radius: 15px;
+}
+
+
+/* 
+        CONTACT
+*/
+
+.contact-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 40px auto 10px auto;
+    width: 70vw;
+    border-bottom: 2px solid rgba(14, 14, 14, 0.199);
+    border-radius: 5px;
+}
+.contact {
+    margin: 10px auto 10px auto;
+    width: 90vw;
+}
+.contact h2 {
+    text-align: center;
+    font-size: 2rem;
+
+}
+.contact .desc {
+    margin: auto;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 10px;
+    width: 40vw;
+}
+
+.contact .info {
+    width: 40vw;
+
+    display: flex;
+    margin: 0px auto 0px auto;
+    gap: 0px;
+}
+.contact .info .item {
+    margin: 0px auto 0px auto;
+}
+.contact .info .item h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.contact .info .item p{
+    position:relative;
+    top: -20px;
+}
+
+
+/* 
+        FOOTER
+*/
+footer {
+    margin: 40px auto 0px auto;
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 14pt;
+    border-top: 1px solid #ddd;
+}
