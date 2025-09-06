@@ -1,12 +1,11 @@
 body {
- 
     background-image: url("imgs/daw2-dark.png");
     background-color:black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #000000;
 
     line-height: 1.6;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
@@ -17,18 +16,19 @@ body {
         HEADER
 */
 header {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255);
     padding: 0px 0px 25px 0px;
-    margin: auto;
+    margin: 0 0 10px 0;
 
-    width: 96vw;
+    width: 100vw;
     height: 25px;
-
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius: 4px;
+    background: #000000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 40%, rgba(41, 41, 41, 1) 100%);
+    
 }
 
 nav {
+    margin: 0 40px 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,11 +74,11 @@ nav ul li a:hover {
 
 
 .about {
-    color: rgba( 255, 255, 255 , 0.85);
+    
     display: flex;
-    gap: 10px;
+    gap: 40px;
     padding: 13px;
-    margin: auto;
+    margin: 0 20px 0 25px;
 }
 .about .img-content {
     margin: 0px;
@@ -89,27 +89,25 @@ nav ul li a:hover {
     width: 600px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.808);
-    margin: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.87);
 }
 .about .text-content {
     position: relative;
-    top: 10px;
     height: 100%;
     flex: 1;
     padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
     
     border-radius: 15px;
-    
+    background: #000000;
+    background: radial-gradient(circle,rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.35) 100%);
 }
 .about .text-content h4 {
     position: relative;
     top: -20px;
     text-align: left;
-    font-size: 2.5rem;
-    font-weight: 100;
+    font-size: 2.3rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.938);
     text-decoration: underline;
     font-variant:small-caps ;
     margin: 0px auto 0px auto;
@@ -119,7 +117,9 @@ nav ul li a:hover {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25pt;
     margin: 0px auto 0px auto;
-    font-size: 1.5rem;
+    color: rgba(231, 231, 231, 0.767);
+    font-size: 1.2rem;
+    font-weight: 600;
 
 }
 
@@ -130,48 +130,51 @@ nav ul li a:hover {
 
 
 .projects-header {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.9);
     text-align: center;
     font-size: 2.5rem;
     font-weight: 100;
     margin: 10px auto 30px auto;
     width: 70vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
 }
 .projects {
     display: flex;
     gap: 50px;
     padding: 13px;
-    margin: auto;
+    margin: 0px 20px 0 25px;
     
 }
 .projects .dec-img {
-    height: 950px;
+    height: 850px;
     width: 45vw;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin: 0 auto 0 20px;
 }
 .projects .list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     max-width: 50vw;
 }
 .projects .list .item {
     display: flex;
     gap: 40px;
     padding: 10px;
-    margin: 10px auto 0 auto;background: RGBA(255, 255, 255, 0.9);
-background: linear-gradient(167deg,rgba(255, 255, 255, 0.9) 0%, rgba(123, 145, 168, 0.9) 51%, rgba(183, 169, 214, 0.9) 100%);
+    margin: 0px auto 0 auto;
+
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
+
+    background: #000000;
+    background: radial-gradient(circle,rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.45) 100%);
+
     transition:  transform .3s, box-shadow .3s ease;
 }
 .projects .list .item:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 12px 26px rgba(0, 0, 0, 0.281);
 }
 .projects .list .item figure {
@@ -182,6 +185,7 @@ background: linear-gradient(167deg,rgba(255, 255, 255, 0.9) 0%, rgba(123, 145, 1
     text-align: center;
     font-size: .8rem;
     font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
 }
 .projects .list .item img {
     height: 200px;
@@ -196,18 +200,21 @@ background: linear-gradient(167deg,rgba(255, 255, 255, 0.9) 0%, rgba(123, 145, 1
     padding: 0px;
     position: relative;
     top: -15px;
+    color: rgba(231, 231, 231, 0.767);
 }
+
 .projects .list .item .info a:link {
-    color:#000000be;
+    color: rgba(255, 255, 255, 0.767);
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
 }
 .projects .list .item .info a:visited {
-    color: #000000be;
+    color: rgba(255, 255, 255, 0.767);
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
 }
 .projects .list .item .info a:hover {
-    color:#1b268bb2;
-    text-decoration: underline 0.15em #1b268bb2;
+    color: rgba(196, 196, 196, 0.719);
+    /*text-decoration: underline 0.15em #4e5bcab2;*/
+    text-decoration: underline 0.1em rgba(105, 105, 105, 0.719);
     transition: text-decoration-color .5s, color .5s ease;
 }
 .projects .list .item .info audio {
@@ -226,10 +233,10 @@ background: linear-gradient(167deg,rgba(255, 255, 255, 0.9) 0%, rgba(123, 145, 1
     text-align: center;
     font-size: 2.5rem;
     font-weight: 100;
-    margin: 40px auto 10px auto;
-    width: 70vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.801);
-    border-radius: 5px;
+    margin: 10px auto 30px auto;
+    width: 77vw;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
 } 
 .demos .list {
     display: flex;
@@ -241,9 +248,13 @@ background: linear-gradient(167deg,rgba(255, 255, 255, 0.9) 0%, rgba(123, 145, 1
     margin: 10px auto 10px auto;
     width: 25vw;
     text-align: center;
-    background:rgba(255, 255, 255, 0.7);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.397);
     border-radius: 15px;
+
+    background: #000000;
+    background: radial-gradient(circle,rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.65) 100%);
+
     transition:  transform .3s, box-shadow .3s ease;
 }
 .demos .list .item:hover {
@@ -251,9 +262,11 @@ background: linear-gradient(167deg,rgba(255, 255, 255, 0.9) 0%, rgba(123, 145, 1
     box-shadow: 0 12px 26px rgba(0, 0, 0, 0.281);
 }
 .demos .list .item h2 {
-    margin: 10px 0 10px 0;
+    color: rgba(255, 255, 255, 0.863);
+    margin: 5px 0 0px 0;
 }
 .demos .list .item p {
+    color: rgba(231, 231, 231, 0.767);
     margin: 0 0 10px 0;
 }
 .demos .list .item audio {
@@ -270,15 +283,19 @@ background: linear-gradient(167deg,rgba(255, 255, 255, 0.9) 0%, rgba(123, 145, 1
     text-align: center;
     font-size: 2.5rem;
     font-weight: 100;
-    margin: 40px auto 10px auto;
-    width: 70vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.863);
-    border-radius: 5px;
+    margin: 100px auto 30px auto;
+    width: 60vw;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
 }
 .contact {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(231, 231, 231, 0.767);
     margin: 10px auto 10px auto;
-    width: 90vw;
+    width: 43vw;
+
+    border-radius: 25px;
+    background: #000000;
+    background: radial-gradient(circle,rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0) 100%);
 }
 .contact h2 {
     text-align: center;
@@ -318,10 +335,10 @@ background: linear-gradient(167deg,rgba(255, 255, 255, 0.9) 0%, rgba(123, 145, 1
         FOOTER
 */
 footer {
-    margin: 40px auto 0px auto;
-    text-align: center;
-    padding: 40px 20px;
+    margin: 0px 40px 0px 0px;
+    text-align: right;
+
     color: #b8b8b8ce;
-    font-size: 14pt;
-    border-top: 1px solid #a0a0a046;
+    font-size: 10pt;
+   
 }
