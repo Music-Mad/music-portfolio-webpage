@@ -153,7 +153,7 @@ nav ul li a:hover {
     font-weight: 100;
     margin: 10px auto 30px auto;
     width: 70vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.89);
     border-radius: 4px;
 }
 .projects {
@@ -252,7 +252,7 @@ nav ul li a:hover {
     font-weight: 100;
     margin: 10px auto 30px auto;
     width: 77vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.815);
     border-radius: 4px;
 } 
 .demos .list {
@@ -305,7 +305,7 @@ nav ul li a:hover {
     font-weight: 100;
     margin: 100px auto 10px auto;
     width: 60vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.849);
     border-radius: 4px;
 }
 .contact {
