@@ -1,10 +1,20 @@
+/* def for variables like text and background colors*/
+:root {
+    --h-color: rgb(255, 255, 255);
+    --h2-color: rgba(255, 255, 255, 0.9);
+    --h3-color: rgba(255, 255, 255, 0.75);
+    --text-color: rgba(231, 231, 231, 0.75);
+}
+
 body {
-    background-image: url("imgs/daw2-dark.png");
+    background-image: url("imgs/daw.png");
     background-color:black;
+    overflow-x: hidden;
+
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #000000;
-    overflow-x:hidden;
+    color: var(--text-color);
     line-height: 1.6;
+
     padding: 0;
     margin: 0;
 }
@@ -15,209 +25,215 @@ body {
 /*
         HEADER
 */
-header {
-    color: rgb(255, 255, 255);
-    padding: 0px 0px 25px 0px;
-    margin: 0 0 10px 0;
 
-    width: 100vw;
-    height: 25px;
+header {
     background: #000000;
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 40%, rgba(41, 41, 41, 1) 100%);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.507);
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.507);
 
-    
+    padding: 0px 0px 25px 0px;
+    margin: 0 0 10px 0;
+    width: 100vw;
+    height: 30px;
 }
 
 nav {
-    margin: 0 40px 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 40px 0 40px;
 }
 nav .logo {
-    letter-spacing: 0.2rem;
-    font-size: 2rem;
-    font-weight: normal;
+    color: var(--h-color);
+    letter-spacing: 0.3rem;
+    font-size: 2.2rem;
+
+    position: relative;
+    top: -2px;
 }
 nav ul {
-    margin: 0px;
-    padding: 0px;
+    color: var(--h-color);
     font-size: 1.3rem;
+    
     display: flex;
     list-style:upper-roman;
+
     gap: 4rem;
-}
-nav ul li {
-    cursor: pointer;
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-    transition: color 0.5s, text-decoration-color 0.5s ease;
+    margin: 0px;
+    padding: 0px;
 }
 nav ul li a:link {
+    color: var(--h-color);
     cursor: pointer;
-    color:rgba(255, 255, 255, 0.9);
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
     transition: color 0.5s, text-decoration-color 0.5s ease;
 }
 nav ul li a:visited {
+    color: var(--h-color);
     cursor: pointer;
-    color:rgba(255, 255, 255, 0.9);
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
     transition: color 0.5s, text-decoration-color 0.5s ease;
 }
 nav ul li a:hover {
-    color:rgba(255, 255, 255, 0.9);
+    color:var(--h-color);
+    cursor: pointer;
     text-decoration: underline 0.15em rgba(255, 255, 255, 0.9);
 }
+
+.chapter-header {
+    color: var(--h2-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    
+   
+    border-bottom: 2px solid rgba(255, 255, 255, 0.966);
+    border-radius: 4px;
+
+    margin: 10px auto 30px auto;
+    width: 70vw;
+}
+
 
 
 /*
         ABOUT
 */
 
-
 .about {
-    
     display: flex;
     gap: 40px;
     padding: 13px;
     margin: 0 20px 0 25px;
 }
 .about .img-content {
-    margin: 0px;
     flex-shrink: 0;
+    margin: 0px;
 }
 .about .img-content img{
-    height: 450px;
-    width: 600px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.87);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.637);
+    height: 450px;
+    width: 600px;
 }
 .about .text-content {
     position: relative;
-    height: 100%;
     flex: 1;
-    padding: 20px;
-    
+
     border-radius: 15px;
     background: #000000;
     background: radial-gradient(circle,rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.35) 100%);
+
+    padding: 20px;
+    height: 100%;
 }
 .about .text-content h4 {
-    position: relative;
-    top: -20px;
+    color: var(--h2-color);
     text-align: left;
     font-size: 2.3rem;
     font-weight: 200;
-    color: rgba(255, 255, 255, 0.938);
     text-decoration: underline;
     font-variant:small-caps ;
+
+    position: relative;
+    top: -20px;
+
     margin: 0px auto 0px auto;
 }
 .about .text-content p{
+    color: var(--text-color);
     text-align: left;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25pt;
-    margin: 0px auto 0px auto;
-    color: rgba(231, 231, 231, 0.767);
     font-size: 1.2rem;
     font-weight: 600;
 
+    margin: 0px auto 0px auto;
 }
+
+
 
 
 /*
     PROJECTS
 */
 
-
-.projects-header {
-    color: rgba(255, 255, 255, 0.9);
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 100;
-    margin: 10px auto 30px auto;
-    width: 70vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
-}
 .projects {
     display: flex;
     gap: 50px;
     padding: 13px;
     margin: 0px 20px 0 25px;
-    
 }
 .projects .dec-img {
-    height: 850px;
-    width: 45vw;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.39);
+
+    height: 850px;
+    width: 45vw;
 }
 .projects .list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     max-width: 50vw;
+    gap: 30px;
 }
 .projects .list .item {
-    display: flex;
-    gap: 40px;
-    padding: 10px;
-    margin: 0px auto 0 auto;
-
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
     border-radius: 15px;
 
     background: #000000;
     background: radial-gradient(circle,rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.45) 100%);
 
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+    margin: 0px auto 0 auto;
+
     transition:  transform .3s, box-shadow .3s ease;
 }
 .projects .list .item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.281);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.45);
 }
 .projects .list .item figure {
     margin: 0px;
     padding: 0px;
 }
 .projects .list .item figcaption {
-    text-align: center;
-    font-size: .8rem;
-    font-style: italic;
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-size: .7rem;
+    font-style: italic;
 }
 .projects .list .item img {
-    height: 200px;
-    width: 200px;
     object-fit:cover;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    height: 200px;
+    width: 200px;
     margin: 10px 10px 0px 10px;
 }
 .projects .list .item .info {
-    margin: 0px 25px 0px 0px;
-    padding: 0px;
     position: relative;
     top: -15px;
-    color: rgba(231, 231, 231, 0.767);
+    margin: 0px 25px 0px 0px;
+    padding: 0px;
 }
 
 .projects .list .item .info a:link {
-    color: rgba(255, 255, 255, 0.767);
+    color: var(--h3-color);
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
 }
 .projects .list .item .info a:visited {
-    color: rgba(255, 255, 255, 0.767);
+    color: var(--h3-color);
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
 }
 .projects .list .item .info a:hover {
-    color: rgba(196, 196, 196, 0.719);
-    /*text-decoration: underline 0.15em #4e5bcab2;*/
-    text-decoration: underline 0.1em rgba(105, 105, 105, 0.719);
+    color: var(--h3-color);
+    text-decoration: underline 0.1em rgb(255, 255, 255);
     transition: text-decoration-color .5s, color .5s ease;
 }
 .projects .list .item .info audio {
@@ -231,16 +247,6 @@ nav ul li a:hover {
         DEMOS
 */
 
-.demos-header {
-    color: rgba(255, 255, 255, 0.9);
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 100;
-    margin: 10px auto 30px auto;
-    width: 77vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
-} 
 .demos .list {
     display: flex;
     margin: 10px 200px 10px 200px;
@@ -248,8 +254,6 @@ nav ul li a:hover {
     gap: 40px;
 }
 .demos .list .item {
-    margin: 10px auto 10px auto;
-    width: 25vw;
     text-align: center;
     
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.233);
@@ -258,6 +262,9 @@ nav ul li a:hover {
     background: #000000;
     background: radial-gradient(circle,rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0.4) 100%);
 
+    margin: 10px auto 10px auto;
+    width: 25vw;
+
     transition:  transform .3s, box-shadow .3s ease;
 }
 .demos .list .item:hover {
@@ -265,61 +272,53 @@ nav ul li a:hover {
     box-shadow: 0 12px 26px rgba(0, 0, 0, 0.486);
 }
 .demos .list .item h2 {
-    color: rgba(255, 255, 255, 0.863);
+    color: var(--h2-color);
     font-weight: 600;
     margin: 5px 0 0px 0;
 }
 .demos .list .item p {
-    color: rgba(231, 231, 231, 0.767);
-    margin: 0 0 10px 0;
+    color: var(--text-color);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    margin: 0 0 10px 0;
 }
 .demos .list .item audio {
     border-radius: 15px;
 }
 
 
+
 /* 
         CONTACT
 */
 
-.contact-header {
-    color: rgba(255, 255, 255, 0.9);
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 100;
-    margin: 100px auto 10px auto;
-    width: 60vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
-}
 .contact {
-    color: rgba(231, 231, 231, 0.767);
-    margin: 10px auto 10px auto;
-    width: 43vw;
+    color: var(--text-color);
 
     border-radius: 25px;
     background: #000000;
-    background: radial-gradient(circle,rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(circle,rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
+
+    position: relative;
+    top: -15px;
+    margin: 0px auto 0px auto;
+    width: 43vw;
 }
 .contact h2 {
     text-align: center;
     font-size: 2rem;
-
 }
 .contact .desc {
-    margin: auto;
     text-align: center;
     font-size: 1.9rem;
-    padding: 10px;
+
     width: 40vw;
+    margin: auto;
+    padding: 10px;
 }
 
 .contact .info {
-    width: 40vw;
-
     display: flex;
+    width: 40vw;
     margin: 0px auto 0px auto;
     gap: 0px;
 }
@@ -341,10 +340,9 @@ nav ul li a:hover {
         FOOTER
 */
 footer {
-    margin: 0px 20px 0px 0px;
-    text-align: right;
-
     color: #b8b8b8ce;
+    text-align: right;
     font-size: 10pt;
-   
+    margin: 0px 20px 0px 0px;
+
 }
